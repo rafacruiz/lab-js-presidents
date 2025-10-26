@@ -460,7 +460,7 @@ function sortPresidentsByBirthYear(presidentsArr) {
 function getAgeAtInauguration(presidentsArr) {
   return presidentsArr.map((president) => {
     president['ageAtInauguration'] = president.tookOffice - president.birthYear;
-    
+
     return president;
   });
 }
@@ -469,7 +469,9 @@ function getAgeAtInauguration(presidentsArr) {
 
 
 // Bonus: Iteration 6 | Presidents Born After - `filter()`
-function getPresidentsBornAfter(presidentsArr, year) {}
+function getPresidentsBornAfter(presidentsArr, year) {
+  return presidentsArr.filter(president => president.birthYear > year);
+}
 
 
 
